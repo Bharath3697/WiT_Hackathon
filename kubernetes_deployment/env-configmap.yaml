@@ -1,0 +1,17 @@
+apiVersion: v1
+data:
+  DEBUG: "False"
+  ML_API_KEY: 
+  SECRET_KEY: 
+  SQL_DATABASE: xbqmieet
+  SQL_HOST: queenie.db.elephantsql.com
+  SQL_PASSWORD: 4AvQK9s7YWCQCu6sKOFDfTsZPkQSWPgT
+  SQL_PORT: "5432"
+  SQL_USER: xbqmieet
+  WEATHER_API_KEY: 
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: web-env
+  name: env

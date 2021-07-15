@@ -1,0 +1,421 @@
+#formContainer {
+    width: 40%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#billformContainer {
+    width: 90%;
+    height: 100%;
+}
+
+#formC {
+    width: 100%;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#wformContainer {
+    height: 100%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wformC {
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 2rem; */
+    border-radius: 15px;
+}
+
+.theInputsw {
+    width: 150px;
+    border: 1px solid black;
+    border-style: none none solid none;
+    float: left;
+    height: 35px;
+    font-size: 13px;
+    margin: 0px 20px 0px 0px;
+}
+
+input {
+    width: 50%;
+}
+
+.columnw {
+    width: 100%;
+    display: inline-flex;
+    padding: 20px;
+}
+
+.rows {
+    width: 100%;
+    display: block;
+}
+
+.columnb {
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+}
+
+.column {
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+}
+
+.theLabels {
+    width: 30%;
+    float: left;
+}
+
+@media screen and (max-width: 520px) {
+    .theInputsb {
+        width: 50%;
+        border: 1px solid black;
+        border-style: none none solid none;
+        margin-left: -50px;
+        height: 40px;
+        margin-top: -10px;
+    }
+    .theLabelsb {
+        width: 60%;
+        float: left;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    .theInputsb {
+        width: 45%;
+        border: 1px solid black;
+        border-style: none none solid none;
+        margin-left: -120px;
+        height: 40px;
+        margin-top: -10px;
+    }
+    .theLabelsb {
+        width: 30%;
+        float: left;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+}
+
+.theLabels1 {
+    float: left;
+    margin-left: 20px;
+}
+
+.theInputs {
+    width: 60%;
+    border: 1px solid black;
+    border-style: none none solid none;
+}
+
+.theInputs1 {
+    width: 90%;
+    border-radius: 3px;
+    border: 1px solid white;
+    float: left;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.backarrow {
+    margin-left: 20px;
+    float: left;
+}
+
+.backarrow1 {
+    margin-top: -45px;
+    margin-left: 20px;
+    float: left;
+}
+
+.backarrow2 {
+    margin-top: -45px;
+    float: left;
+}
+
+.info_head {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: -30px;
+    float: left;
+}
+
+.Trade_button1 .ask_qstn {
+    float: right;
+}
+
+.Trade_button1 .topic {
+    float: left;
+}
+
+.Trade_button1 {
+    display: flow-root;
+    margin: 20px 0px 0px 20px;
+    margin-top: 80px;
+}
+
+.hr-line1 {
+    margin-top: 35px;
+    background-color: #afadad;
+    width: 97%;
+    margin-left: 0px;
+}
+
+#topicformContainer {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topicformC {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+}
+
+.textbox {
+    width: 90%;
+    border-radius: 3px;
+    border: 1px solid white;
+    float: left;
+    height: 60%;
+    margin-left: 20px;
+}
+
+.textboxj {
+    width: 90%;
+    border-radius: 3px;
+    border: 1px solid black;
+    float: left;
+    height: 60%;
+    margin-left: 20px;
+}
+
+.textboxb {
+    width: 98%;
+    border-radius: 3px;
+    border: 1px solid white;
+    float: left;
+    height: 60%;
+}
+
+.topics {
+    text-align: left;
+}
+
+.title {
+    color: #0077cc;
+}
+
+.topbox {
+    width: 96%;
+    display: flow-root;
+    margin-top: 10px;
+}
+
+.topbox .asked_by1 {
+    float: right;
+    font-size: small;
+}
+
+.topbox .asked_by {
+    float: left;
+    font-size: small;
+}
+
+.topbox .asked_on {
+    float: right;
+    right: 10px;
+    font-size: x-small;
+}
+
+.contain {
+    float: left;
+    width: 95%;
+    text-align: left;
+    margin: 80px 0px 0px 20px;
+}
+
+.creator_desc {
+    font-size: larger;
+}
+
+.topic_line {
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+
+.comment_disc {
+    margin-top: 30px;
+}
+
+.market_content {
+    margin-top: 60px;
+}
+
+.market_content1 {
+    margin-top: 110px;
+}
+
+.radio_buttons {
+    width: 50px;
+}
+
+.pro_info {
+    color: red;
+}
+
+.pro_info1 {
+    color: red;
+    margin-left: 20px;
+    text-align: left;
+    font-size: large;
+}
+
+.backarrowd {
+    float: right;
+    margin-right: 3px;
+    margin-top: -5px;
+    color: #ed5d5d;
+    cursor: pointer;
+}
+
+.backarrowc {
+    float: right;
+    margin-right: 2px;
+    color: #ed5d5d;
+    cursor: pointer;
+}
+
+.backarrowx {
+    float: right;
+    margin-right: 2px;
+    color: #ed5d5d;
+    cursor: pointer;
+    margin-top: -40px;
+}
+
+.title {
+    color: black;
+}
+
+.prod_name {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 520px) {
+    .help_title {
+        width: 92%;
+        font-size: 10px;
+    }
+    #formContainer {
+        width: 450px;
+        height: 500px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    .help_title {
+        width: 92%;
+        font-size: 30px;
+    }
+    #formContainer {
+        width: 450px;
+        height: 500px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.scrollable {
+    margin-top: 30px;
+    display: block;
+    text-align: left;
+    width: 96%;
+    /* overflow: scroll; */
+    height: 50px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.day_active {
+    border: 1px solid #dddada;
+    background-color: #dddada;
+    padding: 0px 10px 0px 10px;
+    border-radius: 20px;
+}
+
+.days {
+    margin-right: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.days:hover {
+    text-decoration: none;
+    width: 10px;
+    height: 50px;
+}
+
+.head_list {
+    width: 96%;
+}
+
+.visible {
+    display: block !important;
+}
+
+.max_temp {
+    display: none;
+    text-align: left;
+    /* margin-left: 20px; */
+}
+
+.container {
+    width: 96%;
+}
+
+.lh {
+    width: 50%;
+    float: left;
+    border: 1px sold black;
+    padding: 10px 10px 10px 10px;
+}
+
+.rh {
+    padding: 10px 10px 10px 10px;
+    width: 50%;
+    color: black;
+    float: right;
+    border: 1px sold black;
+}
+
+.tod {
+    margin-bottom: 10px;
+}
+
+.options {
+    width: 60%;
+}

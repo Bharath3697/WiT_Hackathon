@@ -1,0 +1,28 @@
+version: "3"
+services:
+  nginx:
+    image: bk369/wit_hackathon:nginx6
+    container_name: nginx
+    restart: always
+    ports:
+      - "7500:7500"
+    depends_on:
+      - web
+    networks:
+      - wit_network
+
+  web:
+    image: bk369/wit_hackathon:web2
+    command: [sh, -c, "python ./manage.py migrate && python ./server.py"]
+    container_name: web
+    env_file:
+      - .env
+    restart: always
+    networks:
+      - wit_network
+    ports:
+      - "7000:7000"
+
+networks:
+  wit_network:
+    external: false

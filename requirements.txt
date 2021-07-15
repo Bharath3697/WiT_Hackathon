@@ -1,0 +1,10 @@
+django-phonenumber-field
+Django==3.1.7
+django-cors-headers==3.4.0
+djangorestframework==3.12.4
+python-dateutil==2.8.1
+python-decouple==3.3
+requests==2.25.1
+waitress==2.0.0
+psycopg2-binary==2.8.6
+phonenumbers

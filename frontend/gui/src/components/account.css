@@ -1,0 +1,102 @@
+#accformC {
+    width: 100%;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#accformContainer {
+    width: 450px;
+    height: 500px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .help_title {
+        width: 92%;
+        font-size: 30px;
+    }
+    #accformContainer {
+        width: 450px;
+        margin-top: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* 
+@media screen and (min-width: 1000px) {
+    .help_title {
+        width: 92%;
+        font-size: 30px;
+    }
+    #accformContainer {
+        width: 30%;
+        height: 100%;
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}  */
+
+.testing {
+    margin-top: 60px;
+    display: block;
+    text-align: left;
+}
+
+.hrside {
+    margin: 20px;
+    /* font-size: 22px; */
+}
+.hrside1 {
+    margin: 20px;
+    font-size: 22px;
+}
+input {
+    width: 100%;
+}
+
+.rows {
+    width: 100%;
+    display: block;
+}
+
+.column {
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+}
+
+.accLabels {
+    width: 30%;
+    float: left;
+}
+
+.accInputs {
+    width: 60%;
+    border: 1px solid black;
+    border-style: none none solid none;
+    height: 25px;
+}
+
+.accInputs:focus {
+    width: 60%;
+    border: 1px solid black;
+    border-style: none none solid none;
+    height: 25px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.acc_head {
+    font-size: xx-large;
+}

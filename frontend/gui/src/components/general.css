@@ -1,0 +1,220 @@
+.rec_container {
+    margin-top: 30px;
+    margin-left: 20px;
+    float: left;
+    display: flow-root;
+}
+
+.rec_box {
+    margin-top: 10px;
+    display: inline-flex;
+    float: left;
+}
+
+.arrow {
+    margin-top: 60px;
+}
+
+.others1 {
+    float: left;
+    margin-top: 40px;
+    /* margin-left: 20px; */
+}
+
+.agri_container {
+    margin-top: 30px;
+    margin-left: 20px;
+    float: left;
+    display: flow-root;
+    width: 96%;
+}
+
+.agri_box {
+    display: inline-flex;
+    float: left;
+}
+
+@media screen and (max-width: 520px) {
+    .agriculture:hover,
+    .agriculture {
+        margin-right: 20px;
+        font-size: 15px;
+        text-decoration: none;
+        color: #007bff;
+        cursor: pointer;
+    }
+    .others {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    .agriculture:hover,
+    .agriculture {
+        margin-right: 20px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #007bff;
+        cursor: pointer;
+    }
+    .others {
+        font-size: 20px;
+    }
+}
+
+.available_cont:hover {
+    background-color: #5a6268;
+}
+
+.available_cont {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #6c757d;
+    color: white;
+    margin-right: 2px;
+}
+
+.hr-line2 {
+    margin-top: 38px;
+    background-color: #afadad;
+    width: 98%;
+    margin-left: 0px;
+}
+
+.result_box {
+    background-color: white;
+    /* width: 98%; */
+    height: 100%;
+    margin-top: 40px;
+}
+
+.result_box1 {
+    /* background-color: white; */
+    width: 93%;
+    height: 100%;
+    margin-top: 40px;
+    /* text-align: center; */
+}
+
+.crop_cat {
+    float: left;
+    margin-left: 20px;
+    width: 98%;
+}
+
+.pest_images {
+    float: left;
+    width: 100%;
+}
+
+.bugimage {
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    /* display: flow-root; */
+}
+
+.bugname {
+    float: left;
+    width: 98%;
+}
+
+.bugalign {
+    width: 100%;
+    float: left;
+}
+
+.heads {
+    float: left;
+    text-align: left;
+    width: 98%;
+}
+
+.viewer {
+    float: right;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.viewer:hover {
+    float: right;
+    color: #1766ba;
+    text-decoration: underline;
+}
+
+
+/* .ml_box {
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 50px;
+    float: right;
+} */
+
+.dis_left {
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+}
+
+.dis_right {
+    width: 50%;
+    float: right;
+    margin-top: 30px;
+}
+
+.ml_boxl,
+.ml_box {
+    width: 120px;
+    /* float: left; */
+}
+
+.label_labelm,
+.label_labelml {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+#cimg {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-top: 50px;
+    margin-left: -200px;
+}
+
+.op {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.rec_title {
+    width: 90%;
+}
+
+
+/* .label_labelm {
+    margin-left: 20px;
+    margin-top: 50px;
+    float: right;
+}
+
+
+
+.label_labelml {
+    margin-left: 20px;
+    margin-top: 50px;
+    float: left;
+} */
+
+.headsm {
+    /* margin-top: 30px; */
+    float: left;
+    width: 100%;
+}

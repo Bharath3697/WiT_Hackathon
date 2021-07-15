@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.21.0 (992df58d8)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: nginxnode
+  name: nginxnode
+spec:
+  type: NodePort
+  ports:
+    - protocol: TCP
+      name: "7500"
+      port: 7500
+      targetPort: 7500
+      nodePort: 30737
+  selector:
+    io.kompose.service: nginx
+status:
+  loadBalancer: {}

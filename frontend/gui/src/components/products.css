@@ -1,0 +1,269 @@
+.hr-line {
+    margin-top: 4px;
+    background-color: #afadad;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.Trade_button {
+    float: left;
+    width: 96%;
+    margin: 20px 0px 0px 20px;
+    margin-top: 35px;
+}
+
+.workspace {
+    float: left;
+}
+
+.delete {
+    text-align: left;
+    text-decoration: none;
+    color: #ff0000 !important;
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: #279cfc !important;
+}
+
+.launch {
+    text-decoration: none;
+    color: #4caf50;
+    float: right;
+}
+
+.coins {
+    width: 230px !important;
+    float: right !important;
+    margin: -10px -10px 0px 0px !important;
+}
+
+.earn {
+    float: left;
+    font-size: larger;
+}
+
+.invoice {
+    text-align: left;
+}
+
+.cabs {
+    float: left;
+    margin-left: 0px;
+}
+
+.fileupload {
+    float: left;
+    width: 250px;
+    margin-left: 20px;
+}
+
+.fileup {
+    width: 25%;
+}
+
+.fileload {
+    float: left;
+    position: absolute !important;
+}
+
+.card1 {
+    margin-left: 0px !important;
+}
+
+.delete:hover,
+.launch:hover {
+    color: rgb(39, 143, 255);
+    text-decoration: none;
+}
+
+.card-title {
+    padding-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 18rem;
+    overflow: hidden;
+    font-size: 1.1rem;
+}
+
+.card-subtitle {
+    margin-top: 10px;
+    padding-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 18rem;
+    overflow: hidden;
+}
+
+.card-body {
+    width: 100%;
+    padding: 0.6rem;
+}
+
+.text-muted {
+    color: #000000 !important;
+}
+
+.product_list {
+    float: left;
+    width: 100%;
+}
+
+.pro_info {
+    font-size: large;
+    float: left;
+}
+
+.collapsible {
+    background-color: #beeada;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 70%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    float: left;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.collapsible:focus {
+    outline: 0 !important;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #5ac49d;
+    border-radius: 20px;
+}
+
+.content {
+    padding: 0px 20px 20px 20px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    float: left;
+    margin-left: 20px;
+}
+
+.content1 {
+    margin-top: 80px;
+    padding: 0 20px 20px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    /* float: left; */
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 520px) {
+    .collapsible {
+        background-color: #beeada;
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        width: 93%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        float: left;
+        margin-left: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    .collapsible {
+        background-color: #beeada;
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        width: 70%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        float: left;
+        margin-left: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.options1 {
+    width: 20%;
+    float: left;
+    margin-left: 30px;
+}
+
+.default {
+    display: none;
+}
+
+.works {
+    width: 50%;
+    float: left;
+}
+
+.forces {
+    width: 50%;
+    float: right;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 16.5rem;
+    /* background-color: #f3f3f3; */
+    border: 1px;
+    border-color: #858585 !important;
+    border-style: solid;
+    margin: 10px 5px 2px 15px;
+    display: inline-flex;
+    background: linear-gradient( 180deg, rgb(245 245 245) 20%, rgb(212 212 212) 80%);
+    margin-top: 10px;
+    margin-left: 15px;
+    display: inline-flex;
+    text-align: left;
+    float: left;
+}
+
+@media only screen and (max-width: 515px) {
+    .card {
+        width: 90%;
+        left: 10px;
+    }
+}
+
+.acc_card {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transition: 0.1s ease-in-out;
+    transform: scale(1.07);
+    box-shadow: 1px 1px 1px 1px rgb(85, 85, 85);
+    background: linear-gradient( 90deg, rgb(236 236 236) 20%, rgb(221 255 229 / 50%) 80%);
+    color: #0a9a2b;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.card-rows {
+    display: inline;
+}
+
+.card2:hover {
+    transition: none;
+    transform: none;
+    background: linear-gradient( 180deg, rgb(245 245 245) 20%, rgb(212 212 212) 80%);
+    color: black;
+}

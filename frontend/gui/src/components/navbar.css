@@ -1,0 +1,239 @@
+.navbar {
+    background: #5ac49d;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    color: black;
+}
+
+.sidenavcontainer {
+    width: 250px;
+}
+
+.testing {
+    margin-top: 80px;
+    display: block;
+    text-align: left;
+}
+
+.hrside {
+    margin: 10px;
+}
+
+.newbox {
+    margin-top: 20px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* .navbar-container {
+    display: flex;
+    line-height: 0px;
+    width: 100%;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: black;
+} */
+
+.navbar-logo {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem;
+    height: 0px;
+    /* padding-left: 5px; */
+}
+
+.navbar-logo:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    padding-top: 5px;
+}
+
+.nav-item {
+    height: 80px;
+}
+
+.nav-item-search {
+    height: 80px;
+}
+
+.nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+
+.nav-links:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+#search {
+    height: 30px;
+    font-size: 11pt;
+    width: 230px;
+}
+
+#btn-search-button {
+    margin-left: 5px;
+}
+
+.btn-outline-success {
+    background-color: var(--primary);
+    color: white;
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+    margin-left: 5px;
+}
+
+.btn-outline-success:hover {
+    transition: all 0.3s ease-out;
+    background: rgb(111, 221, 175);
+    color: #242424;
+    transition: 250ms;
+}
+
+
+/* @media only screen and (max-width: 400px) {
+    .navbar-logo {
+        font-size: 0.7rem;
+        padding-top: 25px;
+    }
+    .nav-menu {
+        padding-left: 0 !important;
+    }
+} */
+
+@media screen and (max-width: 980px) {
+    .NavbarItems {
+        position: relative;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        height: 100px;
+        padding-left: 25%;
+    }
+    .nav-menu.active {
+        background: #343a40;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        height: 100px;
+    }
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    .nav-links:hover {
+        background-color: #fff;
+        color: #242424;
+        border-radius: 0;
+    }
+    .navbar-logo {
+        top: 0;
+        left: 0;
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 10%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .fa-times {
+        color: #fff;
+        font-size: 2rem;
+    }
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        text-decoration: none;
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: #fff;
+        padding: 14px 20px;
+        border: 1px solid #fff;
+        transition: all 0.3s ease-out;
+    }
+    .nav-links-mobile:hover {
+        background: #fff;
+        color: #242424;
+        transition: 250ms;
+    }
+}
+
+.title {
+    width: 100%;
+}
+
+.title .page_title {
+    float: left;
+    margin-left: -20px;
+}
+
+.title .user {
+    float: right;
+}
+
+.user {
+    text-transform: capitalize;
+    font-size: 20px;
+}

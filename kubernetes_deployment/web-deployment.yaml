@@ -1,0 +1,87 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.21.0 (992df58d8)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: web
+  name: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: web
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.21.0 (992df58d8)
+      creationTimestamp: null
+      labels:
+        io.kompose.network/wit_network: "true"
+        io.kompose.service: web
+    spec:
+      containers:
+      - args:
+        - sh
+        - -c
+        - python ./manage.py migrate && python ./server.py
+        env:
+        - name: DEBUG
+          valueFrom:
+            configMapKeyRef:
+              key: DEBUG
+              name: env
+        - name: ML_API_KEY
+          valueFrom:
+            configMapKeyRef:
+              key: ML_API_KEY
+              name: env
+        - name: SECRET_KEY
+          valueFrom:
+            configMapKeyRef:
+              key: SECRET_KEY
+              name: env
+        - name: SQL_DATABASE
+          valueFrom:
+            configMapKeyRef:
+              key: SQL_DATABASE
+              name: env
+        - name: SQL_HOST
+          valueFrom:
+            configMapKeyRef:
+              key: SQL_HOST
+              name: env
+        - name: SQL_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              key: SQL_PASSWORD
+              name: env
+        - name: SQL_PORT
+          valueFrom:
+            configMapKeyRef:
+              key: SQL_PORT
+              name: env
+        - name: SQL_USER
+          valueFrom:
+            configMapKeyRef:
+              key: SQL_USER
+              name: env
+        - name: WEATHER_API_KEY
+          valueFrom:
+            configMapKeyRef:
+              key: WEATHER_API_KEY
+              name: env
+        image: bk369/wit_hackathon:web2
+        imagePullPolicy: ""
+        name: web
+        ports:
+        - containerPort: 7000
+        resources: {}
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes: null
+status: {}
