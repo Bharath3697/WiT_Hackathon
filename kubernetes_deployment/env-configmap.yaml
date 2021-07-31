@@ -3,12 +3,7 @@ data:
   DEBUG: "False"
   ML_API_KEY: jxZ3fTo-HEBmHo49OlAwEaTQeinOl8eZuraopo7OQewI
   ML_URL: https://us-south.ml.cloud.ibm.com/ml/v4/deployments/8ddeefe9-c0db-4221-b5ae-8218a14de695/predictions?version=2021-07-23
-  SECRET_KEY: ^*6v0^cg@zn+ngy
-  SQL_DATABASE: xbqmieet
-  SQL_HOST: queenie.db.elephantsql.com
-  SQL_PASSWORD: 4AvQK9s7YWCQCu6sKOFDfTsZPkQSWPgT
-  SQL_PORT: "5432"
-  SQL_USER: xbqmieet
+  SECRET_KEY: ^*6v0^cg@zn+ngydjref%3r53$rrt
   WEATHER_API_KEY: 2b6ed19f3d474152aed19f3d4791527d
 kind: ConfigMap
 metadata:
