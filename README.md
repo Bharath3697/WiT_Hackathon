@@ -2,7 +2,7 @@
 
 A basic GitHub repository example for new Call for Code projects and those that join the Call for Code with Turbo Dynamic. You can make this as simple or as in-depth as you need. And don't forget to register for Call for Code 2021!
 
-## Make a “U” Turn: Extravagance to Resourceful
+## Make a “U” Turn: Extravagant to Resourceful
 
 \*\*Short Description
 
