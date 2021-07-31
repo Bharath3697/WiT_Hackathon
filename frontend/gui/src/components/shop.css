@@ -1,15 +1,18 @@
 .itemlist {
-    padding: 20px 0px 0px 20px;
+    padding: 0px 0px 0px 20px;
     float: left;
     text-align: left;
     width: 100%;
     font-size: larger;
 }
 
+#trinfo {
+    margin-top: 30px;
+}
+
 .sell_item {
     width: 25%;
-    height: 40px;
-    background-color: #48ba62;
+    background-color: #48ba62ab;
     margin: 0px 20px 0px 20px;
     color: white;
     border-radius: 0.25rem;
@@ -18,8 +21,7 @@
 
 .buy_item {
     width: 25%;
-    background-color: #48ba62;
-    height: 40px;
+    background-color: #48ba62ab;
     margin: 0px 20px 0px 20px;
     color: white;
     border-radius: 0.25rem;
@@ -29,8 +31,7 @@
 .sell_item:hover,
 .buy_item:hover {
     width: 25%;
-    background-color: #6c757d;
-    height: 40px;
+    background-color: #48ba62;
     margin: 0px 20px 0px 20px;
     color: white;
     border-radius: 0.25rem;
@@ -47,31 +48,33 @@
     font-size: x-large;
     margin-left: 20px;
     /* margin-top: 60px; */
-     width: 96%;
+    width: 96%;
     text-align: left;
-    color: #138c35;
+    color: #20c997;
 }
 
 .dykp {
-    width:90%;
+    width: 90%;
     float: left;
     text-align: left;
     /* margin-left: 20px; */
-    padding:0px 20px 0px 20px;  
+    padding: 0px 20px 0px 20px;
 }
-.headlineinfo{
-    width:100%;
+
+.headlineinfo {
+    width: 100%;
 }
-.ally{
-    width:90%;
+
+.ally {
+    width: 90%;
     /* float: left; */
     /* text-align: left; */
     /* margin-left: 20px; */
-    padding:0px 20px 0px 20px;  
-    margin-bottom:20px;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 20px;
 }
 
-.pageinfo{
-    float:left;
-    padding-left:20px;
+.pageinfo {
+    float: left;
+    padding-left: 20px;
 }

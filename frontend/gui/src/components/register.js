@@ -73,7 +73,7 @@ function Register() {
       <div id="accformContainer" onSubmit={handleSubmit}>
         <form id="accformC">
           <span className="acc_head">
-            <b>Register</b>
+            <b className="logc">Register</b>
           </span>
           <div className="rows">
             <div className="column">
@@ -136,8 +136,11 @@ function Register() {
               Register
             </Button>
           </div>
-          <span>
-            Already registered ? <a href="/login">Login</a>
+          <span className="quest">
+            Already registered ?
+            <a className="regs" href="/login">
+              Login
+            </a>
           </span>
           <br /> <br />
         </form>

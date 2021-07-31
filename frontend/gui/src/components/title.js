@@ -213,7 +213,9 @@ class Title extends React.Component {
               <span className="asked_on">{resp_data.date_created} </span>
             </div>
             <hr className="topic_line" />
-            <span className="creator_desc">{resp_data.description} </span>
+            <span className="creator_desc">
+              Description : {resp_data.description}{" "}
+            </span>
           </div>
         </>
       );
@@ -225,7 +227,7 @@ class Title extends React.Component {
         </Link>
         {arr}
         <br />
-        <h6>Comments : </h6>
+        <h6 className="com_haed">Comments : </h6>
         {arr1}
         <div className="comment_section">
           <span>

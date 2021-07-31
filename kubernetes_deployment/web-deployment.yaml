@@ -40,6 +40,11 @@ spec:
             configMapKeyRef:
               key: ML_API_KEY
               name: env
+        - name: ML_URL
+          valueFrom:
+            configMapKeyRef:
+              key: ML_URL
+              name: env
         - name: SECRET_KEY
           valueFrom:
             configMapKeyRef:
@@ -75,7 +80,7 @@ spec:
             configMapKeyRef:
               key: WEATHER_API_KEY
               name: env
-        image: bk369/wit_hackathon:web2
+        image: bk369/wit_hackathon:webv3
         imagePullPolicy: ""
         name: web
         ports:

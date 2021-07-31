@@ -1,5 +1,7 @@
 .navbar {
-    background: #5ac49d;
+    /* background: #23433d; */
+    background-color: #1affd424;
+    /* background: linear-gradient( 89deg, rgb(250 250 250 / 16%) 0%, rgb(52 255 170 / 17%) 45%); */
     height: 50px;
     display: flex;
     justify-content: center;
@@ -9,7 +11,11 @@
     width: 100%;
     top: 0;
     z-index: 999;
-    color: black;
+    color: white;
+}
+
+.scrolled {
+    background: #264640;
 }
 
 .sidenavcontainer {
@@ -36,19 +42,8 @@
     width: 100%;
 }
 
-
-/* .navbar-container {
-    display: flex;
-    line-height: 0px;
-    width: 100%;
-    align-items: stretch;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: black;
-} */
-
 .navbar-logo {
-    color: black;
+    color: white;
     cursor: pointer;
     text-decoration: none;
     font-size: 1.2rem;
@@ -57,7 +52,7 @@
 }
 
 .navbar-logo:hover {
-    color: white;
+    color: #04e481;
     text-decoration: none;
 }
 
@@ -226,7 +221,6 @@
 
 .title .page_title {
     float: left;
-    margin-left: -20px;
 }
 
 .title .user {
@@ -236,4 +230,9 @@
 .user {
     text-transform: capitalize;
     font-size: 20px;
+    color: #04e481;
+}
+
+.box-act {
+    background: #0031a06b;
 }

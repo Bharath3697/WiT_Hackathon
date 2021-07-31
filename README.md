@@ -1,18 +1,16 @@
-
 **Submission or project name**
 
 A basic GitHub repository example for new Call for Code projects and those that join the Call for Code with Turbo Dynamic. You can make this as simple or as in-depth as you need. And don't forget to register for Call for Code 2021!
 
-Make a “U” Turn: Extravagance to Resourceful
---------------------------------------------------------
+## Make a “U” Turn: Extravagance to Resourceful
 
-**Short Description
+\*\*Short Description
 
-**What’s the Problem?****
+**What’s the Problem?\*\***
 
 Realizing the importance of green practices at home or at workplace or in the society in general, can help reduce waste, conserve resources, improve air, soil and water quality, and protect ecosystems and biodiversity.
 Despite being aware of the destruction, it is causing to the ecosystem, we continue indulging in production of irreversible & harmful waste products and engaging in detrimental practices.
-The designed application will update the users on how we are contributing to this destruction by producing volume of  harmful waste products. This application will also recommend solutions & ways to mitigate and overcome the situation.
+The designed application will update the users on how we are contributing to this destruction by producing volume of harmful waste products. This application will also recommend solutions & ways to mitigate and overcome the situation.
 
 **The Idea**
 
@@ -32,7 +30,6 @@ Link – https://www.youtube.com/watch?v=RwIGSH5eSDo
 **The Architecture**
 
 ![image](https://user-images.githubusercontent.com/49307991/122602622-c8f06d80-d090-11eb-9f74-1ddb6aab1a28.png)
-
 
 **Project Roadmap**
 
@@ -56,12 +53,11 @@ Add more features to weather forecast (flood, cyclone warning)
 
 In this section you add the instructions to run your project on your local machine for development and testing purposes. You can also add instructions on how to deploy the project in production.
 
-Deployment to Docker :
----------------------------
+## Deployment to Docker :
 
 Fill the env file :
 
-SECRET_KEY= {add a random key here ex: 9uqp%ss*(0g44p3+np2-&7#a0h5swe#l!%(6@$r7!32_54@9807!5 }
+SECRET_KEY= {add a random key here ex: 9uqp%ss\*(0g44p3+np2-&7#a0h5swe#l!%(6@\$r7!32_54@9807!5 }
 
 DEBUG=False
 
@@ -81,8 +77,7 @@ ML_API_KEY= {use watson studio ml api key}
 
 Run docker-compose up
 
-Deployment on Kubernetes
---------------------------
+## Deployment on Kubernetes
 
 Use the yaml files inside kubernetes_deployment folder to deploy
 
@@ -90,11 +85,9 @@ fill the env-configmap.yml
 
 Link : https://cloud.ibm.com/docs?tab=deploy
 
-Run in local :
----------------------
+## Run in local :
 
-1.	FrontEnd :
-
+1. FrontEnd :
 
 cd to frontend/gui/
 
@@ -102,8 +95,7 @@ npm install
 
 npm start
 
-2.	Backend :
-
+2. Backend :
 
 cd greenhouse/
 
@@ -113,14 +105,12 @@ python manage.py migrate
 
 python server.py
 
+## **Live Demo**
 
-**Live Demo**
------------------------------
-You can find a running system to test at http://169.51.207.18:30737/home
+You can find a running system to test at http://169.51.207.117:30737/home
 
+## **Built With**
 
-**Built With**
----------------------------------
 React JS
 
 django
@@ -128,5 +118,3 @@ django
 IBM Cloud Kubernetes Cloud
 
 Postgre SQL
-
-

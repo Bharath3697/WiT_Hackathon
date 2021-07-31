@@ -46,7 +46,18 @@
 } */
 
 body {
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
+    /* height: 93vh; */
+    color: aliceblue;
+    background-position: top;
+    /* background-repeat: no-repeat; */
+    /* background-color: greenyellow; */
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    /* background-position: 50% 50%; */
+    /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  */
+    /* https://c4.wallpaperflare.com/wallpaper/271/986/465/nature-plants-macro-depth-of-field-wallpaper-preview.jpg */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://c4.wallpaperflare.com/wallpaper/271/986/465/nature-plants-macro-depth-of-field-wallpaper-preview.jpg");
 }
 
 :root {
@@ -114,4 +125,16 @@ pre {
 .auth_error {
     font-size: 20px;
     margin-top: 50px;
+}
+
+a {
+    color: #05ed88;
+}
+
+a:hover {
+    color: blue;
+}
+
+b {
+    color: #7fffd4;
 }

@@ -45,7 +45,7 @@ function Login() {
       <div id="accformContainer" onSubmit={handleSubmit}>
         <form id="accformC">
           <span className="acc_head">
-            <b>Login</b>
+            <b className="logc">Login</b>
           </span>
           <div className="rows">
             <div className="column">
@@ -75,8 +75,11 @@ function Login() {
               Login
             </Button>
           </div>
-          <span>
-            Not registered yet? <a href="/register">Register</a>
+          <span className="quest">
+            Not registered yet?
+            <a className="regs" href="/register">
+              Register
+            </a>
           </span>
           <br /> <br />
         </form>

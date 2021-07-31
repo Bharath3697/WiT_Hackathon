@@ -19,7 +19,10 @@ const SidebarLink = styled(Link)`
     border-left: 4px solid #0be539;
     cursor: pointer;
     text-decoration: none;
-    color: #94e3a4;
+    color: #20c997;
+  }
+  &:active {
+    background: #0031a06b;
   }
 `;
 
@@ -28,7 +31,7 @@ const SidebarLabel = styled.span`
 `;
 
 const DropdownLink = styled(Link)`
-  background: #454b5b;
+  background: #00000078;
   height: 60px;
   padding-left: 3rem;
   display: flex;
@@ -38,22 +41,31 @@ const DropdownLink = styled(Link)`
   font-size: 18px;
 
   &:hover {
-    background: #252831;
+    background: #0c0c0cb0;
     border-left: 4px solid white;
     cursor: pointer;
     text-decoration: none;
-    color: #94e3a4;
+    color: white;
   }
 `;
 
 const SubMenu = ({ item }) => {
+  const activebar = (id) => {
+    var bars = document.getElementsByClassName("box");
+    for (var i = 0; i < bars.length; i++) {
+      bars[i].classList.remove("box-act");
+    }
+
+    document.getElementById(id).classList.add("box-act");
+  };
+
   const [subnav, setSubnav] = useState(false);
 
   const showSubnav = () => setSubnav(!subnav);
 
   return (
     <>
-      <div className="box">
+      <div className="box" id={item.id} onClick={() => activebar(item.id)}>
         <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
           <div>
             {item.icon}

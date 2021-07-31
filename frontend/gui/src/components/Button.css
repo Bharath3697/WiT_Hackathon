@@ -25,7 +25,7 @@
 }
 
 .btn--primaryw {
-    background-color: #6c757d;
+    background-color: #80f7d969;
     color: white;
     border: 1px solid #6c757d;
 }
@@ -55,7 +55,7 @@
     border: 1px solid #6c757d;
     float: left;
     font-size: 13px;
-    margin-left: 10px!important;
+    margin-left: 10px !important;
 }
 
 .btn--login {
@@ -80,12 +80,15 @@
 .btn--secondaryp:hover,
 .btn--primary2:hover,
 .btn--primary1:hover,
-.btn--primaryw:hover,
 .btn--primary:hover,
 .btn--fileupload:hover {
     background-color: #5a6268;
     color: white;
     border: 1px solid #5a6268;
+}
+
+.btn--primaryw:hover {
+    background-color: #16ba9b !important;
 }
 
 #btn-search-button {
@@ -128,7 +131,7 @@
 
 .btn--secondary1 {
     margin-top: 20px;
-    background-color: #7b8289;
+    background-color: #14c4d175;
     color: #fff;
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
@@ -165,7 +168,7 @@
 
 #btn-search-button:hover {
     transition: all 0.3s ease-out;
-    background: rgb(111, 221, 175);
+    background: 05ed88;
     color: #374f7c;
     transition: 250ms;
 }
@@ -180,8 +183,8 @@
 
 .btn--secondary {
     height: 35px;
-    background-color: #48ba62;
-    color: #fff;
+    background-color: #05ed88;
+    color: black;
     padding: 8px 20px;
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
@@ -200,7 +203,7 @@
 .btn--secondary1:hover,
 .btn--secondary:hover {
     transition: all 0.3s ease-out;
-    background-color: #6c757d;
+    background-color: #0db281;
     color: #fff;
     transition: 250ms;
 }

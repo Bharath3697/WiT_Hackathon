@@ -6,6 +6,7 @@ import "./navbar.css";
 
 function Navbar() {
   let user = localStorage.getItem("User");
+
   return (
     <>
       <nav>
@@ -13,7 +14,6 @@ function Navbar() {
           <div className="title">
             <div className="page_title">
               <Link to="/home" className="navbar-logo">
-                <IoIcons.IoIosHome className="backarrow" size={30} />
                 <span className="logo">GreenHouse</span>
               </Link>
             </div>

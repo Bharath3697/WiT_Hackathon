@@ -79,23 +79,23 @@ TEMPLATES = [
 WSGI_APPLICATION = 'greenhouse.wsgi.application'
 
 
-# DATABASES = {
-#   'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#       'NAME': BASE_DIR / 'db.sqlite3',
-#   }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE':  'django.db.backends.postgresql',
-        'NAME':  config('SQL_DATABASE'),
-        'USER':  config('SQL_USER'),
-        'PASSWORD':  config('SQL_PASSWORD'),
-        'HOST':  config('SQL_HOST'),
-        'PORT':  config('SQL_PORT'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE':  'django.db.backends.postgresql',
+#         'NAME':  config('SQL_DATABASE'),
+#         'USER':  config('SQL_USER'),
+#         'PASSWORD':  config('SQL_PASSWORD'),
+#         'HOST':  config('SQL_HOST'),
+#         'PORT':  config('SQL_PORT'),
+#     }
+# }
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -159,3 +159,4 @@ REST_FRAMEWORK = {
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 WEATHER_API_KEY = config('WEATHER_API_KEY')
 ML_API_KEY = config('ML_API_KEY')
+ML_URL=config('ML_URL')

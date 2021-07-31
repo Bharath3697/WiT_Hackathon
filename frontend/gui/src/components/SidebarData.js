@@ -13,6 +13,7 @@ export const SidebarData = [
     icon: <IoIcons.IoMdPerson />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
+    id: "20",
 
     subNav: [
       {
@@ -33,6 +34,7 @@ export const SidebarData = [
     icon: <FaIcons.FaShoppingCart />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
+    id: "21",
 
     subNav: [
       {
@@ -60,7 +62,7 @@ export const SidebarData = [
     title: "Recommendation",
     path: "/recommend",
     icon: <FaIcons.FaChalkboardTeacher />,
-
+    id: "22",
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
@@ -76,9 +78,8 @@ export const SidebarData = [
     title: "Helping Hand",
     path: "/helpinghand/",
     icon: <FaIcons.FaHandsHelping />,
-
+    id: "23",
     cName: "sub-nav",
-
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
@@ -99,10 +100,12 @@ export const SidebarData = [
   {
     title: "Weather Updates",
     path: "/weather",
+    id: "24",
     icon: <IoIcons.IoMdRainy />,
   },
   {
     title: "Forum",
+    id: "25",
     path: "/forum",
     icon: <IoIcons.IoIosChatboxes />,
   },

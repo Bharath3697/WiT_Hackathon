@@ -90,7 +90,7 @@ function Jobform(props) {
 
   return (
     <div className="market_content">
-      <Link to="/help" className="btn-mobile">
+      <Link to="/resource" className="btn-mobile">
         <IoIcons.IoMdArrowBack className="backarrow" size={30} />
       </Link>
       <br />
@@ -108,8 +108,12 @@ function Jobform(props) {
                 onChange={(e) => setlook(e.target.value)}
                 name="look"
               >
-                <option value="Workforce">Workforce</option>
-                <option value="Work">Work</option>
+                <option className="opval" value="Workforce">
+                  Workforce
+                </option>
+                <option className="opval" value="Work">
+                  Work
+                </option>
               </select>
             </div>
             <div className="column">
@@ -120,9 +124,15 @@ function Jobform(props) {
                 value={sector}
                 onChange={(e) => setsector(e.target.value)}
               >
-                <option value="Agriculture">Agriculture</option>
-                <option value="Farming">Farming</option>
-                <option value="Cattle ranching">Cattle ranching</option>
+                <option className="opval" value="Agriculture">
+                  Agriculture
+                </option>
+                <option className="opval" value="Farming">
+                  Farming
+                </option>
+                <option className="opval" value="Cattle ranching">
+                  Cattle ranching
+                </option>
               </select>
             </div>
 

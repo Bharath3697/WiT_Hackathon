@@ -39,6 +39,11 @@
     margin: -10px -10px 0px 0px !important;
 }
 
+.coins:hover {
+    transition: none!important;
+    transform: none!important;
+}
+
 .earn {
     float: left;
     font-size: larger;
@@ -137,8 +142,8 @@
 
 .active,
 .collapsible:hover {
-    background-color: #5ac49d;
-    border-radius: 20px;
+    background: #09b3349c;
+    box-shadow: inset 4px 3px 19px 3px #199736, inset -9px -4px 11px 0px #199736;
 }
 
 .content {
@@ -148,6 +153,11 @@
     background-color: #f1f1f1;
     float: left;
     margin-left: 20px;
+    backdrop-filter: blur(5px);
+    background-color: rgb(3 3 3 / 0%);
+    box-shadow: rgb(0 0 0 / 30%) 2px 8px 8px;
+    border-bottom: 4px rgba(40, 40, 40, 0.35) solid;
+    border-right: 4px rgba(40, 40, 40, 0.35) solid;
 }
 
 .content1 {
@@ -158,12 +168,17 @@
     background-color: #f1f1f1;
     /* float: left; */
     margin-left: 20px;
+    backdrop-filter: blur(5px);
+    background-color: rgb(3 3 3 / 0%);
+    box-shadow: rgb(0 0 0 / 30%) 2px 8px 8px;
+    border-bottom: 4px rgba(40, 40, 40, 0.35) solid;
+    border-right: 4px rgba(40, 40, 40, 0.35) solid;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 520px) {
     .collapsible {
-        background-color: #beeada;
-        color: black;
+        color: white;
         cursor: pointer;
         padding: 18px;
         width: 93%;
@@ -173,15 +188,16 @@
         font-size: 15px;
         float: left;
         margin-left: 20px;
-        border-radius: 10px;
+        border-radius: 6px;
         margin-bottom: 20px;
+        background: #1f9975;
+        box-shadow: 4px 4px 6px 0px #6a8f73, 0px -1px 0px #71e990;
     }
 }
 
 @media screen and (min-width: 520px) {
     .collapsible {
-        background-color: #beeada;
-        color: black;
+        color: white;
         cursor: pointer;
         padding: 18px;
         width: 70%;
@@ -191,46 +207,47 @@
         font-size: 15px;
         float: left;
         margin-left: 20px;
-        border-radius: 10px;
+        border-radius: 6px;
         margin-bottom: 20px;
+        background: #1f9975;
+        box-shadow: 4px 4px 6px 0px #6a8f73, 0px -1px 0px #71e990;
     }
-}
-
-.options1 {
-    width: 20%;
-    float: left;
-    margin-left: 30px;
-}
-
-.default {
-    display: none;
-}
-
-.works {
-    width: 50%;
-    float: left;
-}
-
-.forces {
-    width: 50%;
-    float: right;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 16.5rem;
-    /* background-color: #f3f3f3; */
-    border: 1px;
-    border-color: #858585 !important;
-    border-style: solid;
-    margin: 10px 5px 2px 15px;
-    display: inline-flex;
-    background: linear-gradient( 180deg, rgb(245 245 245) 20%, rgb(212 212 212) 80%);
-    margin-top: 10px;
-    margin-left: 15px;
-    display: inline-flex;
-    text-align: left;
-    float: left;
+    .options1 {
+        width: 20%;
+        float: left;
+        margin-left: 30px;
+        background: #ffffff00;
+        color: white;
+        height: 35px;
+    }
+    .default {
+        display: none;
+    }
+    .works {
+        width: 50%;
+        float: left;
+    }
+    .forces {
+        width: 50%;
+        float: right;
+    }
+    .card {
+        width: 16.5rem;
+        /* background-color: #f3f3f3; */
+        margin: 10px 5px 2px 15px;
+        display: inline-flex;
+        margin-top: 10px;
+        margin-left: 15px;
+        display: inline-flex;
+        text-align: left;
+        float: left;
+        backdrop-filter: blur(5px);
+        background: linear-gradient( 89deg, rgb(250 250 250 / 16%) 0%, rgb(52 255 170 / 17%) 45%);
+        box-shadow: rgb(0 0 0 / 30%) 2px 8px 8px;
+        border-bottom: 3px rgb(255 255 255 / 40%) solid;
+        border-right: 3px rgb(246 246 246 / 43%) solid;
+        color: white;
+    }
 }
 
 @media only screen and (max-width: 515px) {
@@ -248,9 +265,12 @@
 .card:hover {
     transition: 0.1s ease-in-out;
     transform: scale(1.07);
-    box-shadow: 1px 1px 1px 1px rgb(85, 85, 85);
-    background: linear-gradient( 90deg, rgb(236 236 236) 20%, rgb(221 255 229 / 50%) 80%);
-    color: #0a9a2b;
+    backdrop-filter: blur(5px);
+    background: linear-gradient( 89deg, rgb(250 250 250 / 16%) 0%, rgb(52 255 170 / 17%) 45%);
+    box-shadow: rgb(0 0 0 / 30%) 2px 8px 8px;
+    border-bottom: 4px rgb(255 255 255 / 40%) solid;
+    border-right: 4px rgb(246 246 246 / 43%) solid;
+    color: white;
 }
 
 .row {
@@ -259,11 +279,4 @@
 
 .card-rows {
     display: inline;
-}
-
-.card2:hover {
-    transition: none;
-    transform: none;
-    background: linear-gradient( 180deg, rgb(245 245 245) 20%, rgb(212 212 212) 80%);
-    color: black;
 }

@@ -17,8 +17,9 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 2rem;
-    background-color: white;
     border-radius: 15px;
+    backdrop-filter: blur(5px);
+    background-color: rgb(53 231 137 / 7%);
 }
 
 #wformContainer {
@@ -53,6 +54,14 @@ input {
     width: 100%;
     display: inline-flex;
     padding: 20px;
+}
+
+.columnwx {
+    width: 100%;
+    display: inline-flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: -40px;
 }
 
 .rows {
@@ -118,8 +127,19 @@ input {
 
 .theInputs {
     width: 60%;
-    border: 1px solid black;
     border-style: none none solid none;
+    border-style: none none solid none;
+    height: 30px;
+    background: #ffffff00;
+    color: white;
+}
+
+.theInputs1::placeholder,
+.theInputs::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.6;
+    /* Firefox */
 }
 
 .theInputs1 {
@@ -129,6 +149,8 @@ input {
     float: left;
     height: 40px;
     margin-left: 20px;
+    background: #ffffff1f;
+    color: white;
 }
 
 .backarrow {
@@ -171,7 +193,7 @@ input {
 .hr-line1 {
     margin-top: 35px;
     background-color: #afadad;
-    width: 97%;
+    width: 99%;
     margin-left: 0px;
 }
 
@@ -197,23 +219,28 @@ input {
     float: left;
     height: 60%;
     margin-left: 20px;
+    background: #ffffff1f;
+    color: white;
 }
 
 .textboxj {
     width: 90%;
     border-radius: 3px;
-    border: 1px solid black;
     float: left;
     height: 60%;
     margin-left: 20px;
+    background: #ffffff1f;
+    color: white;
 }
 
 .textboxb {
-    width: 98%;
+    width: 99%;
     border-radius: 3px;
     border: 1px solid white;
     float: left;
     height: 60%;
+    background: #ffffff1f;
+    color: white;
 }
 
 .topics {
@@ -279,11 +306,11 @@ input {
 }
 
 .pro_info {
-    color: red;
+    color: #05ed88;
 }
 
 .pro_info1 {
-    color: red;
+    color: #05ed88;
     margin-left: 20px;
     text-align: left;
     font-size: large;
@@ -313,7 +340,7 @@ input {
 }
 
 .title {
-    color: black;
+    color: #20c997;
 }
 
 .prod_name {
@@ -325,6 +352,9 @@ input {
     .help_title {
         width: 92%;
         font-size: 10px;
+    }
+    .textboxb {
+        width: 98%;
     }
     #formContainer {
         width: 450px;
@@ -365,11 +395,12 @@ input {
     background-color: #dddada;
     padding: 0px 10px 0px 10px;
     border-radius: 20px;
+    color: black !important;
 }
 
 .days {
     margin-right: 20px;
-    color: black;
+    color: white;
     cursor: pointer;
 }
 
@@ -395,6 +426,20 @@ input {
 
 .container {
     width: 96%;
+    backdrop-filter: blur(55px);
+    background-color: rgba(0, 191, 255, 0.196);
+    box-shadow: rgb(0 0 0 / 30%) 2px 8px 8px;
+    border: 4px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 4px rgba(40, 40, 40, 0.35) solid;
+    border-right: 4px rgba(40, 40, 40, 0.35) solid;
+    color: white;
+}
+
+.containerxx {
+    margin-top: 20px;
+    width: 98%;
+    min-height: 200px;
+    display: flex;
 }
 
 .lh {
@@ -402,14 +447,61 @@ input {
     float: left;
     border: 1px sold black;
     padding: 10px 10px 10px 10px;
+    backdrop-filter: blur(55px);
+    background-color: rgb(156 156 156 / 12%);
+    height: 100%;
 }
 
 .rh {
     padding: 10px 10px 10px 10px;
     width: 50%;
-    color: black;
     float: right;
     border: 1px sold black;
+    backdrop-filter: blur(55px);
+    background-color: rgb(156 156 156 / 12%);
+    height: 100%;
+}
+
+.lh1 {
+    width: 50%;
+    float: left;
+    border: 1px sold black;
+    padding: 10px 10px 20px 10px;
+    background-color: rgb(156 156 156 / 12%);
+    backdrop-filter: blur(5px);
+}
+
+.rh1 {
+    padding: 10px 10px 20px 10px;
+    width: 50%;
+    float: right;
+    border: 1px sold black;
+    background-color: rgb(156 156 156 / 12%);
+    backdrop-filter: blur(5px);
+}
+
+.trbuttons {
+    margin-top: -1px;
+    padding-top: 40px;
+    width: 98%;
+    background-color: rgb(156 156 156 / 12%);
+    text-align: center;
+    padding-bottom: 30px;
+    backdrop-filter: blur(5px);
+}
+
+.usehead {
+    text-align: center;
+}
+
+.usehr {
+    width: 60%;
+    border-bottom: 1px solid red;
+}
+
+.usehr1 {
+    width: 60%;
+    border-bottom: 1px solid #00ff00;
 }
 
 .tod {
@@ -418,4 +510,26 @@ input {
 
 .options {
     width: 60%;
+    background: #ffffff00;
+    color: white;
+    height: 35px;
+}
+
+select option {
+    background: #1e2a24;
+    color: white;
+}
+
+.com_haed {
+    color: #7fffd4;
+}
+
+.markhead {
+    color: #78e5c7;
+}
+
+.wastelist {
+    /* text-align: center; */
+    padding-left: 35%;
+    list-style: inside;
 }

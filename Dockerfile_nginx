@@ -1,13 +1,5 @@
-FROM node:13.12.0-alpine as build
-WORKDIR /frontend
-COPY ./frontend/gui/package.json ./
-COPY ./frontend/gui/package-lock.json ./
-RUN npm ci --silent
-COPY ./frontend/gui/ ./
-RUN npm run build
-
 FROM nginx:stable-alpine
 COPY ./config/nginx/conf.d /etc/nginx/conf.d
-COPY --from=build /frontend/build /usr/share/nginx/html
+COPY ./frontend/gui/build /usr/share/nginx/html
 COPY ./greenhouse/static/ /usr/share/nginx/html/static
 CMD ["nginx", "-g", "daemon off;"]

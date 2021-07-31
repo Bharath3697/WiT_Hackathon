@@ -25,6 +25,8 @@ function Agri(props) {
   const [RF, setRF] = useState("");
   const [PH, setPH] = useState("");
   const [csug, setcsug] = useState(null);
+  const [bug_crop, setbugcrop] = useState("");
+  const [unavial, setunavial] = useState(false);
 
   const handleSubmit = (event) => {
     const self = props;
@@ -44,7 +46,7 @@ function Agri(props) {
         setcsug(response.data.crop);
         document.getElementById(
           "cimg"
-        ).src = `https://greenhouse-bucket.s3.us-south.cloud-object-storage.appdomain.cloud/crop_${response.data.crop}.jpg`;
+        ).src = `https://greenhouse.s3.ap.cloud-object-storage.appdomain.cloud/crop_${response.data.crop}.jpg`;
       })
       .catch(function (error) {
         setdown(false);
@@ -80,35 +82,45 @@ function Agri(props) {
       });
   };
 
-  const get_pest_info = (event) => {
+  const get_pest_info = (e) => {
+    var available = ["paddy", "wheat"];
+    e.preventDefault();
     const self = props;
-    setcrop_name(event.target.getAttribute("value"));
-    get_pest_data(event.target.getAttribute("value"))
-      .then(function (response) {
-        setselect1("1");
-        setharmless(response.data.harmless);
-        setharmful(response.data.harmful);
-        setselecttext(false);
-      })
-      .catch(function (error) {
-        if (!error.response) {
-          alert("Connection to host failed");
-        } else {
-          if (error.response.status === 401) {
-            localStorage.clear();
-            self.update_login();
-          }
-          if (error.response.status === 500) {
-            toast.error("Internal Server Error", {
-              autoClose: 3000,
-            });
+    if (available.indexOf(e.target.crop_name.value.toLowerCase()) !== -1) {
+      setunavial(false);
+      setcrop_name(e.target.crop_name.value);
+      get_pest_data(e.target.crop_name.value)
+        .then(function (response) {
+          setselect1("1");
+
+          setharmless(response.data.harmless);
+          setharmful(response.data.harmful);
+          setselecttext(false);
+        })
+        .catch(function (error) {
+          if (!error.response) {
+            alert("Connection to host failed");
           } else {
-            toast.error("Error loading data", {
-              autoClose: 3000,
-            });
+            if (error.response.status === 401) {
+              localStorage.clear();
+              self.update_login();
+            }
+            if (error.response.status === 500) {
+              toast.error("Internal Server Error", {
+                autoClose: 3000,
+              });
+            } else {
+              toast.error("Error loading data", {
+                autoClose: 3000,
+              });
+            }
           }
-        }
-      });
+        });
+    } else {
+      setselect1("");
+      setcrop_name(e.target.crop_name.value);
+      setunavial(true);
+    }
   };
   const handleclick = (event) => {
     setselect(event.target.getAttribute("name"));
@@ -119,7 +131,11 @@ function Agri(props) {
 
   return (
     <div className="agri_container">
-    <h4>Knowing the right crop to grow and understanding harmful/harmless pest will return you better yield </h4><br/>
+      <h4>
+        Knowing the right crop to grow and understanding harmful/harmless pest
+        will return you better yield
+      </h4>
+      <br />
       <div className="agri_box">
         <span className="agriculture" name="crop" onClick={handleclick}>
           Crop Suggestion
@@ -138,7 +154,7 @@ function Agri(props) {
         {selected === "crop" && (
           <>
             <span className="rec_title">
-              Fill the form to get the ML recommended crop :
+              Fill the form to get the recommended crop for you soil type
               {down && (
                 <Spinner
                   as="span"
@@ -254,27 +270,25 @@ function Agri(props) {
 
         {selected === "bug" && (
           <div className="crop_cat">
+            <form id="wformC" onSubmit={get_pest_info}>
+              <div className="rows">
+                <div className="columnwx">
+                  <input
+                    className="theInputsw"
+                    value={bug_crop}
+                    onChange={(e) => setbugcrop(e.target.value)}
+                    placeholder="Crop Name"
+                    type="text"
+                    name="crop_name"
+                    required
+                  />
+                  <Button type="submit" buttonStyle="btn--primaryw">
+                    Search
+                  </Button>
+                </div>
+              </div>
+            </form>
             <div className="heads">
-              <label className="label_label">Paddy</label>
-              <input
-                className="radio_buttons"
-                name="crop_type"
-                value="paddy"
-                type="radio"
-                required
-                onClick={get_pest_info}
-              ></input>
-              <label className="label_label">Wheat</label>
-              <input
-                className="radio_buttons"
-                name="crop_type"
-                value="wheat"
-                type="radio"
-                required
-                onClick={get_pest_info}
-              ></input>
-              <br />
-              <span>More crops will be added soon</span>
               <span className="viewer" onClick={changeview}>
                 {selected1 === "1" && selecttext === false && "view harmless"}
                 {selected1 === "1" && selecttext === true && "view harmful"}
@@ -292,6 +306,12 @@ function Agri(props) {
                   pestlist={harmful}
                   name={"Harmful Pests for : " + crop_name}
                 />
+              )}
+              {unavial === true && (
+                <p>
+                  Data Not available for {crop_name}. More crops will be added
+                  soon
+                </p>
               )}
             </div>
           </div>

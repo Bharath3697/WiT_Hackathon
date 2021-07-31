@@ -23,7 +23,6 @@
     }
     #accformContainer {
         width: 450px;
-        margin-top: 40%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -55,10 +54,12 @@
     margin: 20px;
     /* font-size: 22px; */
 }
+
 .hrside1 {
     margin: 20px;
     font-size: 22px;
 }
+
 input {
     width: 100%;
 }
@@ -99,4 +100,17 @@ input:focus {
 
 .acc_head {
     font-size: xx-large;
+    color: black;
+}
+
+.quest {
+    color: black;
+}
+
+.regs {
+    color: blue;
+}
+
+.logc {
+    color: black;
 }

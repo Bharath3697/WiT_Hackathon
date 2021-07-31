@@ -121,6 +121,9 @@ class Donationdetail extends React.Component {
             <b>Posted By : </b> {user_data.username}
           </p>
           <p className="prod_name">
+            <b>Posted On : </b> {resp_data.created_at}
+          </p>
+          <p className="prod_name">
             <b>Contact No : </b> {user_data.phone_number}
           </p>
           <p className="prod_name">
