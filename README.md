@@ -61,19 +61,11 @@ SECRET_KEY= {add a random key here ex: 9uqp%ss\*(0g44p3+np2-&7#a0h5swe#l!%(6@\$r
 
 DEBUG=False
 
-SQL_DATABASE=xbqmieet
-
-SQL_USER=xbqmieet
-
-SQL_PASSWORD=4AvQK9s7YWCQCu6sKOFDfTsZPkQSWPgT
-
-SQL_HOST=queenie.db.elephantsql.com
-
-SQL_PORT=5432
-
 WEATHER_API_KEY= {use your ibm weatherapi key}
 
 ML_API_KEY= {use watson studio ml api key}
+
+ML_URL= {use the ml crop recommendation model url}
 
 Run docker-compose up
 
